@@ -10,7 +10,7 @@
 
 <div align="center">
   <a href="https://deepankar-folio.onrender.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=6DD3FF&center=true&vCenter=true&width=780&height=45&lines=AI%2FML+Engineer+%C2%B7+GenAI+Specialist;Multi-Agent+Orchestration+%7C+LangGraph+Deep+Agents;Knowledge+Graphs+%C2%B7+Ontology+%C2%B7+Hybrid+RAG;MCP+%C2%B7+A2A+%C2%B7+AG-UI+%C2%B7+Agent+Harnesses;4.5%2B+years+turning+research+into+production" alt="AI/ML Engineer · GenAI Specialist" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=6DD3FF&center=true&vCenter=true&width=780&height=45&lines=AI%2FML+Engineer+%C2%B7+GenAI+Specialist;Multi-Agent+Orchestration+%7C+LangGraph+Deep+Agents;Knowledge+Graphs+%C2%B7+Ontology+%C2%B7+Hybrid+RAG;MCP+%C2%B7+A2A+%C2%B7+AG-UI+%C2%B7+Agent+Harnesses;Building+AI+that+works+outside+the+notebook" alt="AI/ML Engineer · GenAI Specialist" />
   </a>
 </div>
 
@@ -20,23 +20,19 @@
   <a href="https://deepankar-folio.onrender.com"><img src="https://img.shields.io/badge/Portfolio-6DD3FF?style=for-the-badge&logo=googlechrome&logoColor=0b1322" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/deepankarpradhan01/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:d.pradhan8881@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <br/>
-  <img src="https://komarev.com/ghpvc/?username=Deepankar010497&label=Profile%20views&color=6dd3ff&style=for-the-badge" alt="Profile views" />
-  <img src="https://img.shields.io/github/followers/Deepankar010497?label=Followers&style=for-the-badge&color=C8F169&logo=github&logoColor=0b1322" alt="Followers" />
-  <img src="https://img.shields.io/badge/Open%20to-Remote%20%2F%20Hybrid-8CE6C6?style=for-the-badge&logo=statuspage&logoColor=0b1322" alt="Open to remote or hybrid" />
 </div>
 
 ---
 
 ## Hey, I'm Deepankar 👋
 
-**AI/ML Engineer and Data Scientist** in Pune, India. For the last **4.5+ years** I've been building enterprise AI systems that actually reach production — not demos. My work sits where **multi-agent orchestration, knowledge graphs and retrieval** meet the unglamorous reality of Postgres, AKS and 3am pager duty.
+I build **agentic AI systems** — the kind that make it out of the notebook and into production.
 
-Most of what I build is invisible to end users: agent harnesses that survive restarts, registries that don't lose writes under concurrency, retrieval that still answers correctly when the vector search confidently gets it wrong.
+My work sits where **multi-agent orchestration, knowledge graphs and retrieval** meet real-world constraints: agent harnesses that stay coherent across long-running sessions, tools that fail safely, and retrieval that keeps answers grounded when the underlying data is messy.
 
-> **I care about:** deterministic behaviour over clever prompts · observability before optimisation · schemas that make the happy path the only path · deleting the endpoint nobody called since 2023.
+> **The best agents aren't the smartest ones — they're the ones you can trust.** In practice that's a retrieval problem, a tooling problem, and an evaluation problem long before it's a model problem.
 
-**Currently:** core backend architect on the **iRUN Kernel Orchestrator** at **LTM** — an enterprise AI IT-Ops platform built on LangGraph Deep Agents, FastAPI and PostgreSQL, deployed on Azure AKS.
+**Currently:** Lead Backend Architect at **LTM**, building multi-agent platforms and the retrieval infrastructure underneath them.
 
 ---
 
@@ -129,53 +125,6 @@ FastAPI · PostgreSQL · Docker · Azure AKS · Dapr · Azure Key Vault · OpenT
 
 ---
 
-## 📊 GitHub in numbers
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Deepankar010497&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&title_color=6DD3FF&icon_color=C8F169&text_color=c9d1d9&bg_color=0d1117" alt="GitHub stats" />
-  <img height="165" src="https://streak-stats.demolab.com?user=Deepankar010497&theme=tokyonight&hide_border=true&background=0d1117&stroke=6DD3FF&ring=C8F169&fire=C8F169&currStreakLabel=6DD3FF" alt="Contribution streak" />
-</div>
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deepankar010497&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&title_color=6DD3FF&text_color=c9d1d9&bg_color=0d1117" alt="Top languages" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepankar010497&repo=portfolio&theme=tokyonight&hide_border=true&title_color=6DD3FF&icon_color=C8F169&text_color=c9d1d9&bg_color=0d1117" alt="Portfolio repository" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Deepankar010497&theme=tokyonight" alt="Profile summary" width="100%" />
-</div>
-
-<div align="center">
-  <img src="https://ghchart.rshah.org/6DD3FF/Deepankar010497" alt="Contribution chart" width="100%" />
-</div>
-
-<details>
-<summary><b>📈 More stats — when I commit, and what in</b></summary>
-
-<br/>
-
-<div align="center">
-  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Deepankar010497&theme=tokyonight&utcOffset=5.5" alt="Commits by hour (IST)" />
-  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Deepankar010497&theme=tokyonight" alt="Repositories per language" />
-</div>
-
-<div align="center">
-  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Deepankar010497&theme=tokyonight" alt="Most commit language" />
-  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Deepankar010497&theme=tokyonight" alt="Summary stats" />
-</div>
-
-</details>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Deepankar010497/Deepankar010497/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Deepankar010497/Deepankar010497/output/snake.svg" />
-    <img src="https://raw.githubusercontent.com/Deepankar010497/Deepankar010497/output/snake.svg" alt="Contribution snake" width="100%" />
-  </picture>
-</div>
-
----
-
 ## 🚀 Selected work
 
 These are enterprise and client systems, so the code lives behind company walls — but here's what they are and what they do. Full write-ups on the **[portfolio →](https://deepankar-folio.onrender.com/projects.html)**
@@ -241,9 +190,9 @@ These are enterprise and client systems, so the code lives behind company walls 
 
 | Session | Format | Reach |
 | :--- | :--- | :--- |
-| **Multi-Agent AI Systems** | Guest lecture, LTM Pune (2024) | 150+ engineering students |
-| **Hybrid RAG Implementation** | Internal demo, LTM (2024) | Technical teams |
-| **Prompt Engineering Best Practices** | Team workshop, LTM (2024) | AI/ML team |
+| **Multi-Agent AI Systems** | Guest lecture (2024) | 150+ engineering students |
+| **Hybrid RAG Implementation** | Internal demo (2024) | Technical teams |
+| **Prompt Engineering Best Practices** | Team workshop (2024) | AI/ML team |
 
 </details>
 
@@ -252,20 +201,17 @@ These are enterprise and client systems, so the code lives behind company walls 
 ## 📍 Right now
 
 ```yaml
-role:        Core backend architect · Data Scientist
-company:     LTM (formerly LTIMindtree) — Pune, India
-since:       2022-07
-focus:       agent harnesses · MCP tool federation · hybrid RAG · FinOps for LLMs
-learning:    context engineering at scale, A2A interop patterns, eval harnesses
-open_to:     Remote / Hybrid — AI/ML & GenAI engineering roles
-education:   M.E. Mechanical Engineering, BITS Pilani (2022) · B.Tech, BPUT (2019)
+focus:      agent harnesses · MCP tool federation · hybrid RAG · FinOps for LLMs
+building:   multi-agent platforms that hold up in production
+exploring:  context engineering at scale · agent evaluation · A2A interop
+based_in:   Pune, India
 ```
 
 ---
 
 ## 🤝 Let's build something intelligent
 
-I'm always up for talking about **multi-agent architecture, retrieval that actually retrieves, or why your agent loops**. If you're hiring or collaborating on something in this space, my inbox is open.
+I'm always glad to talk about agentic systems, retrieval architecture, or what it actually takes to get GenAI into production. If you're hiring or building in this space, reach out.
 
 <div align="center">
   <a href="https://deepankar-folio.onrender.com"><img src="https://img.shields.io/badge/Portfolio-6DD3FF?style=for-the-badge&logo=googlechrome&logoColor=0b1322" alt="Portfolio" /></a>
@@ -286,7 +232,7 @@ I'm always up for talking about **multi-agent architecture, retrieval that actua
     • Banner / footer artwork ......... assets/banner.svg, assets/footer.svg
     • Rotating headline text .......... the readme-typing-svg `lines=` parameter
     • Tech badges ..................... the shields.io image blocks above
-    • Stats card colours .............. bg_color / title_color / icon_color params
-    • Pin a different repo ............ the `repo=` parameter on the `api/pin` card
+    • Section copy .................... plain markdown, edit in place
+    • Contributions ................... github.com/Deepankar010497?tab=contributions
   ─────────────────────────────────────────────────────────────────────────────
 -->

@@ -46,7 +46,7 @@ cd "d:/Github Works/Github_branch_code/Deepankar010497"
 
 git init -b main
 git add -A
-git commit -m "Add profile README with custom banner, stats and snake"
+git commit -m "Add profile README with custom banner artwork"
 
 git remote add origin https://github.com/Deepankar010497/Deepankar010497.git
 git push -u origin main
@@ -78,19 +78,38 @@ GitHub **retired password auth entirely**. When that happens:
 
 ---
 
-## 4. Turn on the snake animation
+## 4. The snake animation (optional — currently switched off)
 
-The snake is the one part that needs a build. A workflow is already included at
-`.github/workflows/snake.yml`.
+A workflow is already included at `.github/workflows/snake.yml`. It works, and it has already
+run — it writes `snake.svg` and `snake-dark.svg` to an **`output`** branch.
 
-1. Push (step 3) — the workflow also runs automatically on push to `main`
-2. Open **Actions** → **Generate contribution snake** → **Run workflow**
-3. Wait ~30s. It creates an **`output`** branch containing `snake.svg` and `snake-dark.svg`
-4. Reload your profile — the snake appears
+**It is not referenced in `README.md` right now, and that's deliberate.** The snake traces your
+contribution graph; because private contributions aren't counted yet (§7), the graph is nearly
+empty and a snake tracing three squares looks worse than no snake at all.
 
-**If the snake shows a broken image:** the `output` branch doesn't exist yet (step 2 hasn't
-completed), or your default branch isn't `main`. Fix the branch name in `snake.yml` under
-`on.push.branches` if yours is `master`.
+**Turn it on once your graph has real activity:**
+
+1. First enable private contributions — see §7, *"My private contributions aren't counted"*
+2. Confirm the `output` branch exists: <https://github.com/Deepankar010497/Deepankar010497/tree/output>
+   — if it doesn't, open **Actions** → **Generate contribution snake** → **Run workflow**
+3. Paste this into `README.md` wherever you want the snake to sit:
+
+```html
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Deepankar010497/Deepankar010497/output/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Deepankar010497/Deepankar010497/output/snake.svg" />
+    <img src="https://raw.githubusercontent.com/Deepankar010497/Deepankar010497/output/snake.svg" alt="Contribution snake" width="100%" />
+  </picture>
+</div>
+```
+
+**To stop running it entirely:** delete `.github/workflows/snake.yml`. The `output` branch is
+harmless and can be left alone.
+
+**If the snake shows a broken image:** the `output` branch doesn't exist yet, or your default
+branch isn't `main`. Fix the branch name in `snake.yml` under `on.push.branches` if yours is
+`master`.
 
 **If Actions is disabled:** Settings → Actions → General → *Allow all actions and reusable
 workflows*. The workflow only needs the default `GITHUB_TOKEN`; no secrets to configure.
@@ -107,11 +126,8 @@ workflows*. The workflow only needs the default `GITHUB_TOKEN`; no secrets to co
 | **Text around the badges** | Everything under `## Hey, I'm Deepankar` |
 | **Tech badges** | The shields.io blocks. Copy any line and change `label`/`logo`/`color`. Logo names come from [Simple Icons](https://simpleicons.org) |
 | **Icon strip** | `skillicons.dev/icons?i=...` — valid names at <https://skillicons.dev> |
-| **Stats card colours** | `bg_color`, `title_color`, `icon_color`, `text_color` params. `bg_color=0d1117` is GitHub's dark background |
-| **Pinned repo card** | The `api/pin` card's `repo=` parameter (currently `portfolio`) |
-| **Productive-time timezone** | `utcOffset=5.5` on that summary card — 5.5 because IST is UTC+5:30 |
-| **Contribution chart colour** | Inside the URL path: `ghchart.rshah.org/6DD3FF/Deepankar010497` |
-| **Snake colours** | `snake.yml` → the `palette` on the `snake-dark.svg` output, or add `color_snake=`/`color_dots=` |
+| **Adding a stats/graph section back** | See §7 → *"Bringing back a stats section"*. Every card is a standalone `<img>`, so add only the ones you've confirmed render |
+| **Snake colours** | `snake.yml` → the `palette` on the `snake-dark.svg` output, or add `color_snake=`/`color_dots=` — only relevant once you re-enable the snake (§4) |
 
 ### Brand palette (matches your portfolio)
 
@@ -133,20 +149,40 @@ your repo except the two local SVGs.
 | :--- | :--- | :--- |
 | Banner, footer | **local SVG in this repo** | No dependency, can't rate-limit, fully branded |
 | Rotating headline | `readme-typing-svg.demolab.com` | Formerly on Heroku; the `demolab.com` domain is the current one |
-| Profile views | `komarev.com/ghpvc` | Counts are approximate and increment on every load |
 | Badges | `img.shields.io` | Very reliable |
 | Icon strip | `skillicons.dev` | One invalid icon name degrades that icon only |
-| Stats / top langs / pinned | `github-readme-stats.vercel.app` | The canonical deploy — **this is the one that occasionally 429s**, see below |
-| Streak | `streak-stats.demolab.com` | ⚠️ **The domain matters.** It is `streak-stats.demolab.com` — the older `github-readme-streak-stats.demolab.com` no longer resolves at all (DNS failure), and the `…herokuapp.com` one is gone |
-| Profile summary + extra stats | `github-profile-summary-cards.vercel.app` | Reliable. Supports `utcOffset`, so your "productive time" card is set to `5.5` to show IST |
-| Contribution chart | `ghchart.rshah.org` | The colour is part of the path: `/6DD3FF/Deepankar010497` |
-| Snake | GitHub Action in this repo | Runs on a schedule, writes to the `output` branch |
+
+That's the complete list — the README now depends on exactly two external services. Deliberately
+**absent**: profile-view counters, stats / streak / language cards, contribution charts and the
+snake. They're all straightforward to add back, but they were removed because they were showing
+near-zero numbers, and a row of zeros reads worse than showing nothing. See §7.
 
 ---
 
 ## 7. Troubleshooting
 
-**Stats cards show "Something went wrong" / a rate-limit message.**
+**Bringing back a stats section.**
+Every card is just an `<img>`, so add back only what renders. Check the URL in a browser tab
+first — an image means it works; JSON, `402` or `429` means it doesn't. These were verified
+good when this README was built:
+
+| Card | URL |
+| :--- | :--- |
+| Stats | `https://github-readme-stats.vercel.app/api?username=Deepankar010497&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&title_color=6DD3FF&icon_color=C8F169&text_color=c9d1d9&bg_color=0d1117` |
+| Top languages | `https://github-readme-stats.vercel.app/api/top-langs/?username=Deepankar010497&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&title_color=6DD3FF&text_color=c9d1d9&bg_color=0d1117` |
+| Streak | `https://streak-stats.demolab.com?user=Deepankar010497&theme=tokyonight&hide_border=true&background=0d1117&stroke=6DD3FF&ring=C8F169&fire=C8F169&currStreakLabel=6DD3FF` |
+| Summary / extra stats | `https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Deepankar010497&theme=tokyonight` |
+| Contribution chart | `https://ghchart.rshah.org/6DD3FF/Deepankar010497` |
+
+⚠️ **`streak-stats.demolab.com` is the correct domain.** The older
+`github-readme-streak-stats.demolab.com` no longer resolves at all (a DNS failure, not a typo you
+made), and the `…herokuapp.com` one is gone.
+
+⚠️ **Fix the data before you fix the design.** The reason this section was cut is that
+`count_private=true` does nothing until you enable private contributions, so the language card
+read *Jupyter Notebook 99.99%* and the stats read four zeros. Turn that setting on first.
+
+**A stats card shows "Something went wrong" / a rate-limit message.**
 `github-readme-stats.vercel.app` is a free shared deployment and does get throttled. Options:
 - Reload after a minute — it's usually transient
 - Self-host it in one click: <https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own-vercel-instance> and swap the domain
@@ -161,7 +197,7 @@ profile"**. The `count_private=true` parameter in the stats URL only works after
 Both `github-profile-trophy.vercel.app` and `github-readme-activity-graph.vercel.app` were
 returning **HTTP 402 (Payment Required)** when this README was built — the shared free Vercel
 deployments were over quota. Those services are popular and may recover, so if you want the
-trophies back, add this where the summary card currently sits:
+trophies back, drop this into `README.md`:
 
 ```html
 <img src="https://github-profile-trophy.vercel.app/?username=Deepankar010497&theme=tokyonight&no-frame=true&no-bg=true&column=7" alt="Trophies" />
@@ -180,7 +216,7 @@ light, but if you'd rather match: change `theme=tokyonight` → `theme=default` 
 `bg_color=0d1117` → `bg_color=ffffff` on each card. For true per-theme switching, wrap an
 `<img>` in `<picture>` with two `<source>` tags using
 `media="(prefers-color-scheme: dark)"` and `media="(prefers-color-scheme: light)"` — the snake
-block already does this and is a good template.
+block in §4 is a good template for that.
 
 **The banner is huge / tiny.**
 It's `width="100%"`, so it fills the column. Edit the `<img>` tag in `README.md` to
