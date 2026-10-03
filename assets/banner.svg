@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Deepankar Pradhan - AI/ML Engineer and GenAI Specialist">
+  <title>Deepankar Pradhan - AI/ML Engineer &amp; GenAI Specialist</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#050810"/>
+      <stop offset="0.55" stop-color="#0b1322"/>
+      <stop offset="1" stop-color="#07171b"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="150" y1="0" x2="1050" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6dd3ff"/>
+      <stop offset="0.55" stop-color="#8ce6c6"/>
+      <stop offset="1" stop-color="#c8f169"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="430" y1="0" x2="770" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6dd3ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8ce6c6" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#c8f169" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6dd3ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#6dd3ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#c8f169" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.16" cy="0.12" r="0.72">
+      <stop offset="0" stop-color="#6dd3ff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#6dd3ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.87" cy="0.92" r="0.78">
+      <stop offset="0" stop-color="#c8f169" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#c8f169" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .p1 { animation: pulse 3.6s ease-in-out infinite; }
+      .p2 { animation: pulse 3.6s ease-in-out infinite; animation-delay: 1.2s; }
+      .p3 { animation: pulse 3.6s ease-in-out infinite; animation-delay: 2.4s; }
+      .soft { animation: soft 7s ease-in-out infinite; }
+      @keyframes pulse { 0%, 100% { opacity: 0.20; } 50% { opacity: 0.95; } }
+      @keyframes soft { 0%, 100% { opacity: 1; } 50% { opacity: 0.80; } }
+      .name { font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 66px; font-weight: 700; letter-spacing: 1.5px; }
+      .role { font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 20px; font-weight: 500; letter-spacing: 4.2px; }
+      .tag  { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 400; letter-spacing: 2.1px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#glowA)"/>
+  <rect width="1200" height="300" fill="url(#glowB)"/>
+  <rect x="0" y="0" width="1200" height="3" fill="url(#edge)"/>
+  <rect x="0" y="297" width="1200" height="3" fill="url(#edge)"/>
+
+  <!-- agent / knowledge-graph motif, kept clear of the text column -->
+  <g stroke="#6dd3ff" stroke-width="1.1" opacity="0.16">
+    <path d="M64 78 L148 132 L96 214 L186 246"/>
+    <path d="M148 132 L214 92"/>
+    <path d="M1136 66 L1052 128 L1104 206 L1022 244"/>
+    <path d="M1052 128 L988 84"/>
+  </g>
+  <g>
+    <circle cx="64"  cy="78"  r="4.5" fill="#6dd3ff" class="p1"/>
+    <circle cx="148" cy="132" r="5.5" fill="#8ce6c6" class="p2"/>
+    <circle cx="96"  cy="214" r="4"   fill="#c8f169" class="p3"/>
+    <circle cx="186" cy="246" r="3.5" fill="#6dd3ff" class="p1"/>
+    <circle cx="214" cy="92"  r="3.5" fill="#c8f169" class="p2"/>
+    <circle cx="1136" cy="66"  r="4.5" fill="#6dd3ff" class="p2"/>
+    <circle cx="1052" cy="128" r="5.5" fill="#8ce6c6" class="p3"/>
+    <circle cx="1104" cy="206" r="4"   fill="#c8f169" class="p1"/>
+    <circle cx="1022" cy="244" r="3.5" fill="#6dd3ff" class="p2"/>
+    <circle cx="988"  cy="84"  r="3.5" fill="#c8f169" class="p3"/>
+  </g>
+
+  <g class="soft">
+    <text class="name" x="600" y="132" text-anchor="middle" fill="url(#brand)">Deepankar Pradhan</text>
+  </g>
+  <text class="role" x="600" y="174" text-anchor="middle" fill="#9fb4cb">AI/ML ENGINEER &#183; GENAI SPECIALIST</text>
+  <rect x="430" y="198" width="340" height="2" rx="1" fill="url(#rule)"/>
+  <text class="tag" x="600" y="228" text-anchor="middle" fill="#7d93a8">LangGraph Deep Agents &#183; MCP &#183; Knowledge Graphs &#183; Hybrid RAG</text>
+  <text class="tag" x="600" y="254" text-anchor="middle" fill="#5d7a93">4.5+ years shipping enterprise AI to production</text>
+</svg>

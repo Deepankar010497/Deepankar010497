@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-label="Let's build something intelligent">
+  <title>Let's build something intelligent</title>
+  <defs>
+    <linearGradient id="fBg" x1="0" y1="0" x2="1200" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07171b"/>
+      <stop offset="0.5" stop-color="#0b1322"/>
+      <stop offset="1" stop-color="#050810"/>
+    </linearGradient>
+    <linearGradient id="fWave" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6dd3ff" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#8ce6c6" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#c8f169" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="fRule" x1="470" y1="0" x2="730" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6dd3ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8ce6c6" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#c8f169" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .ftitle { font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 26px; font-weight: 600; letter-spacing: 1.2px; }
+      .fsub   { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13px; font-weight: 400; letter-spacing: 1.6px; }
+      .fglow  { animation: fg 6s ease-in-out infinite; }
+      @keyframes fg { 0%, 100% { opacity: 1; } 50% { opacity: 0.78; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="170" fill="url(#fBg)"/>
+
+  <!-- wave crest -->
+  <path d="M0,34 C150,96 300,-6 450,30 C600,66 750,-4 900,34 C1020,64 1120,22 1200,10 L1200,170 L0,170 Z"
+        fill="url(#fWave)" opacity="0.14"/>
+  <path d="M0,34 C150,96 300,-6 450,30 C600,66 750,-4 900,34 C1020,64 1120,22 1200,10"
+        fill="none" stroke="url(#fWave)" stroke-width="2.5" opacity="0.75"/>
+
+  <g class="fglow">
+    <text class="ftitle" x="600" y="86" text-anchor="middle" fill="url(#fWave)">Let&#39;s build something intelligent.</text>
+  </g>
+  <rect x="470" y="102" width="260" height="2" rx="1" fill="url(#fRule)"/>
+  <text class="fsub" x="600" y="128" text-anchor="middle" fill="#8ba0b5">deepankar-folio.onrender.com</text>
+  <text class="fsub" x="600" y="150" text-anchor="middle" fill="#5d7a93">linkedin.com/in/deepankarpradhan01 &#183; d.pradhan8881@gmail.com</text>
+</svg>
