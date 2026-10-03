@@ -81,7 +81,8 @@ GitHub **retired password auth entirely**. When that happens:
 ## 4. The snake animation (optional — currently switched off)
 
 A workflow is already included at `.github/workflows/snake.yml`. It works, and it has already
-run — it writes `snake.svg` and `snake-dark.svg` to an **`output`** branch.
+run — it writes `snake.svg` and `snake-dark.svg` to an **`output`** branch. Its automatic
+triggers are currently **commented out** (see step 2 below).
 
 **It is not referenced in `README.md` right now, and that's deliberate.** The snake traces your
 contribution graph; because private contributions aren't counted yet (§7), the graph is nearly
@@ -90,9 +91,12 @@ empty and a snake tracing three squares looks worse than no snake at all.
 **Turn it on once your graph has real activity:**
 
 1. First enable private contributions — see §7, *"My private contributions aren't counted"*
-2. Confirm the `output` branch exists: <https://github.com/Deepankar010497/Deepankar010497/tree/output>
+2. Uncomment the `schedule:` and `push:` triggers in `snake.yml`. They're commented out so the
+   workflow doesn't churn in the background while nothing displays its output — `workflow_dispatch`
+   is left on, so you can always run it by hand in the meantime
+3. Confirm the `output` branch exists: <https://github.com/Deepankar010497/Deepankar010497/tree/output>
    — if it doesn't, open **Actions** → **Generate contribution snake** → **Run workflow**
-3. Paste this into `README.md` wherever you want the snake to sit:
+4. Paste this into `README.md` wherever you want the snake to sit:
 
 ```html
 <div align="center">
@@ -104,8 +108,9 @@ empty and a snake tracing three squares looks worse than no snake at all.
 </div>
 ```
 
-**To stop running it entirely:** delete `.github/workflows/snake.yml`. The `output` branch is
-harmless and can be left alone.
+**To stop running it entirely:** delete `.github/workflows/snake.yml`. The automatic triggers are
+commented out already, so nothing runs on its own; the `output` branch is harmless and can be
+left alone.
 
 **If the snake shows a broken image:** the `output` branch doesn't exist yet, or your default
 branch isn't `main`. Fix the branch name in `snake.yml` under `on.push.branches` if yours is

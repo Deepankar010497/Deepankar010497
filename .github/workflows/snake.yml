@@ -8,19 +8,27 @@
 # After the first successful run you'll have:
 #   output/snake.svg        (light)
 #   output/snake-dark.svg   (dark)
+#
+# PAUSED. The automatic triggers below are commented out because the snake is
+# not displayed in README.md right now -- a snake tracing an almost-empty
+# contribution graph looks worse than no snake at all. Nothing here is broken:
+# uncomment the two triggers (see SETUP.md section 4) once your graph has real
+# activity. Until then you can still run it by hand from the Actions tab.
 # ─────────────────────────────────────────────────────────────────────────────
 name: Generate contribution snake
 
 on:
-  # Rebuild twice a day so the graph stays fresh
-  schedule:
-    - cron: "0 0,12 * * *"
-  # Let you trigger it by hand from the Actions tab
+  # PAUSED -- rebuild twice a day so the graph stays fresh
+  # schedule:
+  #   - cron: "0 0,12 * * *"
+
+  # PAUSED -- rebuild on every push to the default branch
+  # push:
+  #   branches:
+  #     - main
+
+  # Left enabled -- trigger it by hand from the Actions tab
   workflow_dispatch:
-  # Rebuild whenever you push to the default branch
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
